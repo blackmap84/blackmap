@@ -1,0 +1,6 @@
+import { mkdir, copyFile } from 'node:fs/promises';
+await mkdir('dist', { recursive: true });
+for (const file of ['index.html', 'styles.css', 'script.js', 'favicon.svg', 'robots.txt']) {
+  await copyFile(file, `dist/${file}`);
+}
+console.log('Built BLACKMAP website in dist/');
