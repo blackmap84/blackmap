@@ -6,6 +6,9 @@ const files = new Map([
   ['/styles.css', ['styles.css', 'text/css; charset=utf-8']],
   ['/script.js', ['script.js', 'text/javascript; charset=utf-8']],
   ['/favicon.svg', ['favicon.svg', 'image/svg+xml']],
+  ['/logo-horizontal.png', ['logo-horizontal.png', 'image/png']],
+  ['/logo-square.png', ['logo-square.png', 'image/png']],
+  ['/logo-symbol.png', ['logo-symbol.png', 'image/png']],
   ['/robots.txt', ['robots.txt', 'text/plain; charset=utf-8']]
 ]);
 http.createServer(async (req, res) => {
